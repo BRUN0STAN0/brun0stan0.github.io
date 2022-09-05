@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+* {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Share Tech Mono';
+    
+    margin: 0;
+    padding: 0;
+    
+    background-color: rgb(63, 63, 63);
+    text-shadow: 2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    text-shadow: none;
+    bottom: 0;
+
+}
+
+
+
+nav img {
+    width: 50px;
+    filter: hue-rotate(178deg) saturate(6);
+}
+
+nav img.sound {
+    filter: hue-rotate(12deg) brightness(4);
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.name {
+    color: aquamarine;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li {
+    margin: 1vw;
+}
+
+nav ul li img {
+    width: 32px;
+}
+
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.extra {
+    margin-left: 14px;
+}
+
+nav ul li:hover {
+    display: flex;
+    height: 56px;
+    background-color: rgb(101, 197, 165);
+}
+
+input {
+    position:relative;
+    min-width: 28px;
+    min-height: 28px;
+    margin-left: 5px;
+    appearance: none;
+    background: url(img-navbar/icons8-sound-32.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+input:checked {
+    background: url(img-navbar/icons8-suono-50.png);
+    background-size: 100%;
+    transition: .2s;
+}
+
+h1 {
+    display: inline;
+    color: aquamarine;
+}
+
+nav ul li a #btnactive {
+    filter: brightness(1);
+}
+
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-image: linear-gradient(rgb(41, 41, 41), rgb(0, 245, 163));
+    height: 100vh;
+    min-width: 18vw;
+    opacity: 80%;
+    position:fixed;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 12px 12px 12px rgb(29, 29, 29);
+    text-align: center;
+}
+
+
+.lateral:hover {
+    left: 0;
+    transition: 1s;
+}
+
+.lateralbox {
+    font-weight: normal;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.lateralsx {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+/* INIZIO PERCENTUALI */
+.boxpercentuale {
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    left: -15vw;
+  }
+
+.percentuale {
+    background-color: rgb(133, 115, 115) ;
+    border: 1px solid black;
+    width: 8vw;
+  }
+  
+  .percentuale100 {
+      margin-right: 6%;
+      border: 1px solid white;
+  }
+  .percentuale80 {
+      margin-right: 20%;
+      border: 1px solid white;
+  }
+  .percentuale60 {
+    margin-right: 40%;
+    border: 1px solid white;
+  }
+  .percentuale50 {
+    margin-right: 50%;
+    border: 1px solid white;
+  }
+  .percentuale40 {
+    margin-right: 60%;
+    border: 1px solid white;
+  }
+  .percentuale20 {
+    margin-right: 80%;
+    border: 1px solid white;
+  }
+  .percentuale0 {
+    margin-right: 99%;
+    border: 1px solid white;
+  }
+  
+
+/* FINE PERCENTUALI */
+
+
+/* SEZIONI */
+
+section {
+    padding: 20px;
+    background-color: rgb(41, 41, 41);
+    border: 1px dashed aquamarine;
+    height: calc(100vh - 120px);
+    width: 80%;
+    margin-left:auto;
+    max-width: 1400px;
+    padding: 30px;
+    transition: 1s;
+    font-size: 30px;
+    overflow: hidden;
+
+}
+
+section.home {
+    background-image: url('img-section/bruno2low-q.png');
+    background-size: 70vh;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section.home p {
+    max-width: 500px;
+    transition: 5s;
+}
+section.home h1 {
+    transition: 6s;
+}
+
+.project ol {
+    margin-left: 3rem;
+}
+
+.project ol li {
+    list-style-type: upper-roman;
+
+}
+.project ol li a {
+    color: red;
+}
+
+.project ol li a:hover {
+    color: white;
+}
+
+
+
+section.contact {
+    height: 40vh;
+    
+}
+ 
+/* FINE SEZIONI */
+
+/* INIZIO MEDIA SCREEN */
+@media screen and (max-width: 1550px) {
+    
+    .lateral {
+        left: -6rem;
+        font-size:14px;
+    }
+    .boxpercentuale {
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .lateral {
+        left: -9rem;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul li a {
+        width: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .extra{
+        margin: 0px;
+        font-size: 12px;
+    }
+    .lateral {
+        left: -11.5rem;
+        font-size: 12px;
+    }
+    section {
+        font-size: 25px;
+    }
+    .boxpercentuale {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        font-size: 16px;
+    }
+    section.home {
+        background-size: 90vw;
+    }
+    .lateral {
+        left: -9rem;
+    }
+    .project ol {
+        margin-left: 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 550px) {
+    .name {
+        display: none;
+    }
+    
+}
+
+/* FINE MEDIA SCREEN */
